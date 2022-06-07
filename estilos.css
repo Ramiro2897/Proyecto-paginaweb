@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*AQUI EDITAMOS LOS ESTILOS DE LETRAS DEL BODY*/
+
+body {
+    font-family: font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*AQUI YA EMPEZAMOS A CENTRAR Y EDITAR NUESTRO HEADER, LOGO Y ENLACES*/
+
+.bloque {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*AQUI CREAMOS UNA SEGUNDA CLASE AL ELEMENTO HEADER PORQUE LA CLASE BLOQUE SE LE VA A ASIGNAR TODOS LOS BLOQUES, 
+ENTONCES ASI EVITAMOS EDITAR EL CONTENIDO DE FONDO, YA QUE CADA UNA TIENE UNA IMAGEN DE FONDO DIFERENTE*/
+
+.header {
+    background-image: url(img/header.fw.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*ESTO NOS PERMITE IR BAJANDO Y QUE LA IMAGEN BAJE SIN SALIR DEL CONTENEDOR*/
+}
+/* COMO HAY 2 CLASES DEF: CENTRAR, EL CONTENIDO SE DIVIDE EN DOS CONTENEDORES, UNO CONTIENE EL LOGO Y LOS ENLACES,
+Y EL OTRO CONTINE LA PARTE DE LA IMAGEN Y LOS DEMAS TEXTOS, INCLUIDO EL BOTON*/
+.centrar {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    border: ; /*AQUI EL BORDER O TAMAÑO DEL CONTENEDOR POR SI ES NECESARIO*/
+    margin: auto;
+    text-align: center;
+    padding: 20px 0; /*AQUI LE DAMOS PADDING PARA SEPARAR EL TEXTO DEL CONTENEDOR Y EL MENU SOBRE SU CONTENEDOR*/
+}
+
+.logo {
+    color: #c1c1c1;
+    margin-top: 10px;
+    width: 30%;
+    float: left;
+    text-align: left; /*AQUI MOVEMOS EL LOGO A LA IZQUIERDA DE SU CONTENEDOR*/
+    cursor: pointer;
+}
+
+/*AQUI EDITAMOS EL CONTENIDO DE LOS ENLACES EN SU CONTENEDOR*/
+.menu-principal {
+    width: 50%;
+    float: right;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.menu-principal ul {
+
+}
+
+/*AQUI EDITAMOS LOS LI: los enlaces.
+LE DAMOS PADDING PARA QUE EL CONTENIDO SE EXPANDA*/
+
+.menu-principal ul li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.menu-principal ul li a {
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.menu-principal ul li a:hover {
+    background: #130707;
+}
+
+/*IZQUIERDA Y DERECHA*/
+
+.izquierda, .derecha {
+    width: 48%;
+    height: auto;
+    overflow: hidden; /*LO APLICAMOS PARA QUE DADO EL CASO EL ELEMENTO SEA MAS GRANDE QUE EL CONTENEDOR, LO OCULTE*/
+    border: ; /*AQUI EL BORDER O TAMAÑO DEL CONTENEDOR POR SI ES NECESARIO*/
+    display: inline-block;  /*LO APLICAMOS PARA QUE (IZQ, DER) SE PONGAN EN LINEA*/
+}
+
+.izquierda {
+    float: left; /*LO APLICAMOS PARA QUE FLOTE A LA IZQUIERDA*/
+    text-align: left;
+}
+
+
+/*AQUI EDITAMOS EL H4*/
+
+.subtitulo {
+    color: #c1c1c1;
+}
+
+/*AQUI EDITAMOS EL H1, TITULO PRINCIPAL*/
+
+.titulo-principal {
+    color: #fff;
+    font-size: 60px;
+    
+}
+
+/*AQUI EDITAMOS EL PARRAFO*/
+
+.descripcion {
+    color: #c1c1c1;
+    font-weight: 400px;
+    text-align: left;        /*MOVEMOS EL TEXTO DE LA DESCRIPCIÓN A LA IZUIERDA*/
+
+}
+
+/*AQUI EDITAMOS EL BOTON*/
+
+.boton {
+    padding: 10px 20px;
+    background: #B83131;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to right, #9b4c4c, #B83131);
+    box-shadow: 1px 1px 30px -12px #9b4c4c #B83131;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: #ca2626;
+    box-shadow: 1px 1px 15px -6px #B83131;
+}
+
+/*AQUI SE EDITA EL CONTENIDO DE LA DERECHA*/
+
+.derecha {
+    float: right; /*LO APLICAMOS PARA QUE FLOTE A LA DERECHA*/
+}
+
+.img-pres {
+    width: 80%;
+}
+
+/*----------------------AQUI EMPIEZA EL SEGUNDO BLOQUE---------------------*/
+
+/*LADO IZQUIERDO*/
+
+/*EDITAMOS EL CONTENEDOR UNIVERSAL CON LA CLASE ELEGIR*/
+.elegir {
+    padding: 50px opx;
+}
+
+/*AQUI EDITAMOS LA IMAGEN*/
+
+.img-elige {
+    width: 90%;
+}
+
+/*LADO DERECHO*/
+
+.elegir .derecha {
+    text-align: left;   /*AQUI ALINEAMOS EL TEXTO TODO A LA IZQUIERDA*/
+}
+
+.elegir .derecha .texto-naranja {
+    color: #F94F2B;
+}
+
+/*AQUI EDITAMOS EL H1 Y EL PARRAFO*/
+
+.elegir .derecha h1 {
+    color: #424141;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.elegir .derecha p {
+    color: #7D7A7A;
+    font-weight: 400px;
+}
+
+/*AQUI EDITAMOS LAS 4 OPCIONES CON IMAGENES*/
+
+.opciones {
+    display: flex;
+    flex-direction: row;   /*AQUI UBICAMOS LOS ELEMENTOS EN FILAS O COLUMNAS (ORDENAR)*/
+    flex-wrap: wrap;
+    justify-content: space-between;   /*AQUI CUBRIMOS ESPACIO A LOS ELEMENTOS*/
+}
+
+.opcion {
+    width: 48%;
+    border: ;  /*AQUI EL BORDER O TAMAÑO DEL CONTENEDOR POR SI ES NECESARIO*/
+    margin-bottom: 30px;  /*AQUI LE DAMOS ESPACIO A TODOS LOS LADOS*/
+    padding: 8px;
+    border-left: 4px solid #df3a01; /*AQUI LE DAMOS BORDE A LA IZQUIERDA*/
+    border-radius: 7px;
+}
+
+/*AQUI LE DAMOS COLOR AL PASAR EL MOUSE*/
+
+.opcion:hover {
+    color: #df3a01;
+
+}
+
+.opcion .img-opciones {
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+}
+
+/*AQUI EDITAMOS EL TEXTO QUE CONTIENEN LAS IMAGENES*/
+
+.texto-opciones {
+    margin-top: 14px;
+}
+
+/*-------------------TERCER BLOQUE-----------------*/
+/*AQUI EDITAMOS EL FORMULARIO DE RESERVA*/
+
+.notificaciones {
+    height: auto;
+    overflow: hidden;    /*LO APLICAMOS PARA QUE DADO EL CASO EL ELEMENTO SEA MAS GRANDE QUE EL CONTENEDOR, LO OCULTE*/
+    background-image: url(img/dos.fw.png);
+    background-attachment: fixed;   /*ESTO NOS PERMITE IR BAJANDO Y QUE LA IMAGEN BAJE SIN SALIR DEL CONTENEDOR*/
+    padding: 30px 0px;  /*AQUI SEPARAMOS UN POCO EL CONTENEDOR*/
+    color: #fff;
+}
+
+.notificaciones h4 {
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+/*AQUI EDITAMOS LOS INPUT*/
+
+.form-notificaciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.entrada-not {
+    width: 35%;
+    height: auto;
+    padding: 2px 0px;
+    border-radius: 7px;
+    border: none;
+}
+
+/*AQUI EDITAMOS EL BOTON CREAR RESERVA*/
+
+.boton-not {
+    padding: 17px 35px;
+    background: #b83131;
+    color: #fff;
+    border-radius: 7px;
+    border: none;
+    background: linear-gradient(to right, #9b4c4c, #B83131);
+    box-shadow: 1px 1px 30px -12px #9b4c4c, #B83131;
+    transition: all 300ms;
+    cursor: pointer;
+
+}
+
+/*AQUI LE DAMOS COLOR AL PASAR EL MOUSE*/
+
+.boton-not:hover {
+    background: #ca2626;
+    box-shadow: 1px 1px 15px -6px #B83131;
+}
+
+/*--------------------------CUARTO BLOQUE--------------------------------*/
+
+.servicios {
+    border: ;   /*AQUI EL BORDER O TAMAÑO DEL CONTENEDOR POR SI ES NECESARIO*/
+    padding: 50px 0px;          /*SEPARAMOS DEL CONTENEDOR PADRE UNOS 50 PX ARRIBA Y ABAJO*/
+}
+
+/*AQUI EDITAMOS EL H1*/
+.principal-servicios {
+    color: #424141;
+    font-size: 30px;
+}
+
+/*AQUI EDITAMOS EL H4*/
+
+.servicios .centrar .texto-naranja {
+    color: #F94F2B;
+}
+
+/*AQUI EDITAMOS LOS TITULOS H4 QUE ESTAN DENTRO DE LA CAJA*/
+
+.titulo-servicios:hover {
+    color: #F94F2B;
+}
+
+/*AQUI SEPARAMOS LOS CONTENEDORES UNO AL DOS DEL OTRO EN COLOMNUNAS*/
+
+.contenedores {
+    display: flex;              /*AQUI ALIEAMOS TODOS LOS ELEMENTOS DE UN MISMO LADO*/
+    flex-wrap: wrap;            /*AQUI UBICAMOS DOS ELEMENTOS DE CADA LADO*/
+    justify-content: space-between;   /*AQUI CUBRIMOS EL ESPACIO ENTRE ELLOS*/
+    margin-top: -30px;                /*AQUI MOVEMOS LOS CONTENEDORES HACIA ARRIBA PARA CUBRIR EL ESPACIO*/
+
+
+}
+
+/*AQUI EDITAMOS LOS CONTENEDORES QUE CONTIENEN EL TEXTO Y LAS IMAGENES*/
+
+.contenedores .contenidos {
+    border: 1px solid #c1c1c1;
+    width: 45%;
+    height: 160px;
+    position: relative;
+    padding: 20px;                  /*AQUI SEPARAMOS EL TEXTO DE SU CONTENEDOR*/
+    text-align: left;                /*MOVEMOS TEXTO A LA IZQUIERDA*/
+    box-shadow: 0px 0px 10px #ccc;      /*AQUI AGREGAMOS SOMBRA*/
+    border-radius: 7px;
+    margin-bottom: 25px;       /*AQUI DAMOS ESPACIO SOBRE LAS DEMAS CAJAS*/
+}
+
+/*AQUI EDITAMOS LAS IMAGENES*/
+
+.img-servicios {
+    width: 28%;     /*TAMAÑO DE LA IMAGEN DENTRO DEL CONTENEDOR*/
+    float: left;    /*FLOTAMOS LA IMAGEN A LA IZQUIERDA*/
+    margin-right: 8px; /*SEPARAMOS A LA DERECHA LA IMAGEN DEL TEXTO*/
+}
+
+/*AQUI EDITAMOS EL TEXTO P*/
+
+.parrafo {
+    color: #070606;
+    line-height: 20px;   /*SEPARAR UNA LINEA DE TEXTO DE LA OTRA*/
+}
+
+/*----------------------------QUINTO BLOQUE-------------------------- P*/
+
+.footer {
+    height: 360px;                 /*ALTO DE EL CONTENEDOR, MODIFICADO*/
+    border: ;     /*AQUI EL BORDER O TAMAÑO DEL CONTENEDOR POR SI ES NECESARIO*/
+    width: 100%;
+    padding: 40px 0px;            /*AQUI SEPARAMOS LA CAJA HIJA DE SU CONTENEDOR PADRE*/
+    background-image: url(img/footer.fw.png);
+    background-size: 100%;         /*LA IMAGEN OCUPA EL 100%*/
+    background-repeat: no-repeat;
+    
+}
+
+.footer .centrar .izquierda {
+    color: #ccc;
+}
+
+/*CENTRAMOS TEXTO DEL H4 Y EL PARRAFO P*/
+
+.footer .centrar .izquierda h4, p {
+    text-align: center;
+
+}
+
+/*AGREGAMOS LA LINEA BLANCA ARRIBA DEL PARRAFO*/
+
+.footer .centrar .izquierda p {
+    border-top: 1px solid #fff;
+}
+
+/*AQUI EDITAMOS LOS ICONOS*/
+i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/*AQUI EDITAMOS LOS ENLACES*/
+
+a {
+    color: rgb(153, 168, 233);
+}
+
+/*DAMOS ESPACIO ENTRE LAS OPCIONES...*/
+
+li {
+    padding: 5px;
+}
+
+
+/*AQUI EDITAMOS LA PARTE DERECHA QUE CONTIENE EL FORMULARIO*/
+
+.entrada-form {
+    width: 60%;
+    padding: 8px 5px;       /*TAMAÑO DE LOS CUADROS DE RESPUESTA*/
+    margin-bottom: 5px;    /*SEPARAMOS LOS CUADROS DE RESPUESTA*/
+    border-radius: 7px;
+    border: none;
+}
+
+/*EDITAMOS EL BOTON ENVIAR*/
+
+.boton-contact {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 7px;
+    background: #b83131;
+    background: linear-gradient(to right, #9b4c4c, #B83131);
+    box-shadow: 1px 1px 30px -12px #9b4c4c, #B83131;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.boton-contact:hover {
+    background: #ca2626;
+    box-shadow: 1px 1px 15px -6px #B83131;
+}
+
+/*EDITAMOS EL PARRAFO FINAL*/
+.pie-pagina {
+    color: #c1c1c1;
+    border-top: 1px solid #ccc;   /*AGREGAMOS LA LINEA BLANCA ARRIBA DEL PARRAFO*/
+    padding-top: 20px;               /*SEPARAMOS EL TEXTO DE LA LINEA*/
+}
